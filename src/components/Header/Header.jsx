@@ -53,7 +53,7 @@ export default function Header() {
                 style={{ textDecoration: 'none' }}
                 onClick={toggleNav}
             >
-                JSON Forms Example
+                JSON Form Engine Example
             </Link>
             <Link 
                 to={"/json-schema-form"}

@@ -9,6 +9,7 @@ function JSONSchemaFormPage() {
         <JSONSchemaForm 
           schema={TestSchema}
         />
+        <p>Relies on Bootstrap HTML semantics – to be loaded separately</p>
     </div>
   );
 }
