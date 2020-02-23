@@ -4,14 +4,16 @@ import Header from './components/Header/Header';
 import './App.scss';
 
 import LazyLoader from './components/LazyLoader/LazyLoader';
-const FformPage = React.lazy(() => import('./pages/FformPage'));
+const JSONFormPage = React.lazy(() => import('./pages/JSONFormPage'));
+const JSONSchemaFormPage = React.lazy(() => import('./pages/JSONSchemaFormPage'));
 
 function App() {
   return (
     <Router>
       <Header />
         <Switch>
-          <Route exact path="/" component={LazyLoader(FformPage)} />
+          <Route exact path="/" component={LazyLoader(JSONFormPage)} />
+          <Route exact path="/json-schema-form" component={LazyLoader(JSONSchemaFormPage)} />
         </Switch>
     </Router>
   );

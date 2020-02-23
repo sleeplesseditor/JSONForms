@@ -1,0 +1,14 @@
+{
+  "title": "My Form",
+  "description": "My Form",
+  "type": "object",
+  "required": [
+    "name"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    }
+  }
+}
