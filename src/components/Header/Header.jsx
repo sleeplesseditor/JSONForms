@@ -62,6 +62,20 @@ export default function Header() {
             >
                 JSON Schema Forms Example
             </Link>
+            <Link 
+                to={"/json-form-io"}
+                style={{ textDecoration: 'none' }}
+                onClick={toggleNav}
+            >
+                JSON Form.io Example
+            </Link>
+            <Link 
+                to={"/fform"}
+                style={{ textDecoration: 'none' }}
+                onClick={toggleNav}
+            >
+                Fform Example
+            </Link>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="header-button">
