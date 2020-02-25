@@ -5,11 +5,11 @@ import './JSONFormIO.scss';
 
 const JSONFormIo = (props) => {
   return (
-    <div>
+    <div className="json-form-container">
       <JsonForms 
         schema={props.schema}
         uischema={props.uischema}
-        data={props.data}
+        // data={props.data}
         renderers={vanillaRenderers}
         cells={vanillaCells}
       />

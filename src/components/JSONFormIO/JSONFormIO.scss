@@ -1,13 +1,43 @@
-.vertical-layout-item {
-  padding: 10px;
+.json-form-container {
+  width: 40%;
+  box-shadow: 0 0 0.5px 0.5px rgb(82, 80, 80);
+  border-radius: 10px;
+}
 
-  input {
-    border-radius: 5px;
-    width: 100%;
-  }
+.vertical-layout-item {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 0.75rem;
 
   label {
-    margin-right: 5rem;
     font-weight: bold;
+    font-size: 1.2rem;
+
+  }
+
+  .horizontal-layout-item {
+    display: inline-block;
+    width: 20%;
+    margin: 0 1rem;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    input {
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    select,
+    input {
+      width: 90%;
+    }
   }
 }
